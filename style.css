@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 730px;
+    background: linear-gradient(-160deg, #758467 45%, white);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5em;
+    color: #9caf88;
+}
+
+img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 31%;
+    z-index: 2;
+}
+
+.onBtn {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 31%;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.controls {
+    width: 40rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    background-color: #819171;
+    box-shadow: 0px 0px 20px #758467;
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    z-index: -1;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+input[type="range"] {
+    height: 1em;
+    width: 10em;
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    cursor: pointer;
+    border-radius: 35px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: 2;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    background-color: #cbd5cd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.duration {
+    height: 1em;
+    width: 20em;
+    position: absolute;
+    top: 42.5%;
+    left: 64%;
+    color: black;
+    z-index: 2;
+}
+
+.next {
+    position: absolute;
+    left: 75%;
+    bottom: 30%;
+    height: 2rem;
+    width: 4rem;
+    background-color: #9caf88;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 0px 0px 200px #758467;
+    transition: transform 0.3s ease;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.play {
+    position: absolute;
+    left: 60%;
+    bottom: 30%;
+    height: 2rem;
+    width: 4rem;
+    background-color: #9caf88;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 0px 0px 200px #758467;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.previous {
+    position: absolute;
+    left: 45%;
+    bottom: 30%;
+    height: 2rem;
+    width: 4rem;
+    background-color: #9caf88;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 0px 0px 200px #758467;
+    z-index: 2;
+    cursor: pointer;
+}
